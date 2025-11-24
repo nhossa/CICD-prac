@@ -10,7 +10,11 @@ jobs:
         - uses: actions/setup-node@v6
           with:
             node-version: 18
-        - run: npm ci
-        - run: npm run build
-        - run: npm test
-        - run: npm lint
+        - name: install dependencies
+          run: npm ci
+        - name: build
+          run: npm run build
+        - name: test
+          run: npm run test
+        - name: lint
+          run: npm run lint
