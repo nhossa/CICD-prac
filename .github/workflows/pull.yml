@@ -1,4 +1,4 @@
-name: push project
+name: pull project
 
 on: 
   pull_request:
